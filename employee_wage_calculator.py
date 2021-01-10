@@ -1,6 +1,7 @@
 import random
 
 print("Welcome to Employee Wage Computation Program")
+
 WAGE_PER_HOUR = 20
 FULL_DAY_HOUR = 8
 PART_TIME_HOUR = 4
