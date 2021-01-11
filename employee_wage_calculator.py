@@ -5,10 +5,11 @@ class EmployeeWageComputation:
 
     print("Welcome to Employee Wage Computation Program")
 
-    def __init__(self):
-        self.WAGE_PER_HOUR = 20
-        self.FULL_DAY_HOUR = 8
-        self.PART_TIME_HOUR = 4
+    def __init__(self, COMPANY_NAME, WAGE_PER_HOUR, FULL_DAY_HOUR, PART_TIME_HOUR):
+        self.COMPANY_NAME = COMPANY_NAME
+        self.WAGE_PER_HOUR = WAGE_PER_HOUR
+        self.FULL_DAY_HOUR = FULL_DAY_HOUR
+        self.PART_TIME_HOUR = PART_TIME_HOUR
 
     @staticmethod
     def generate_random_attendance():
@@ -35,8 +36,4 @@ class EmployeeWageComputation:
             total_wage += employee_wage
             days += 1
             total_hours += hours
-        print("Total Wage of the employee {} and he worked for total {} hours".format(total_wage, total_hours))
-
-
-obj = EmployeeWageComputation()
-obj.calculate_employee_wage()
+        print("Total Wage of the employee {} from the company {} and he worked for total {} hours".format(total_wage, self.COMPANY_NAME, total_hours))
