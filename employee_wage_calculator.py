@@ -19,7 +19,7 @@ class EmployeeWageComputation:
         switcher = {
             0: 0,
             1: self.FULL_DAY_HOUR,
-            2: self.PART_TIME_HOUR,
+            2: self.PART_TIME_HOUR
         }
         return switcher.get(attendance)
 
@@ -34,7 +34,7 @@ class EmployeeWageComputation:
             print("Employee Wage for day {} is equal to {}".format(days, employee_wage))
             total_wage += employee_wage
             days += 1
-            total_hours +=hours
+            total_hours += hours
         print("Total Wage of the employee {} and he worked for total {} hours".format(total_wage, total_hours))
 
 
